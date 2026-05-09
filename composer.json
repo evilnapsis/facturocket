@@ -1,0 +1,8 @@
+{
+    "require": {
+        "eclipxe/cfdiutils": "2.30",
+        "phpcfdi/credentials": "^1.3",
+        "dompdf/dompdf": "^3.1",
+        "chillerlan/php-qrcode": "^6.0"
+    }
+}
