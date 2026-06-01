@@ -241,6 +241,7 @@ create table invoice (
 	folio varchar(20),
 	date datetime,
 	client_id int,
+	cfdi_use_id int,
 	payment_form_id int,
 	payment_method_id int,
 	currency varchar(10) default 'MXN',
@@ -256,6 +257,7 @@ create table invoice (
 	user_id int,
 	created_at datetime,
 	foreign key (client_id) references client(id),
+	foreign key (cfdi_use_id) references cfdi_use(id),
 	foreign key (payment_form_id) references payment_form(id),
 	foreign key (payment_method_id) references payment_method(id),
 	foreign key (user_id) references user(id)
